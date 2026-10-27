@@ -1,0 +1,10 @@
+# Frontend .gitignore
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+.cache/
+*.log
+.DS_Store

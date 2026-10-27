@@ -1,0 +1,19 @@
+# Backend .gitignore
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.db
+*.sqlite3
+local_trips.json
+*.log
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+htmlcov/
+.coverage

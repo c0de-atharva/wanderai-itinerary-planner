@@ -1,0 +1,103 @@
+# ============================================================
+# WanderAI - Root .gitignore
+# SECURITY: Never commit secrets, keys, or local data.
+# ============================================================
+
+# --- Environment & Secrets (CRITICAL) ---
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# --- Dependencies ---
+node_modules/
+.pnp
+.pnp.js
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+*.egg
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+*.so
+
+# --- Build Outputs ---
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+
+# --- Local Database & Data Files ---
+*.db
+*.sqlite
+*.sqlite3
+local_trips.json
+*.json.bak
+data/local/
+
+# --- OS Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- IDE & Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# --- Logs ---
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Testing ---
+coverage/
+.nyc_output/
+
+# --- Misc ---
+.vercel
+.netlify
+.turbo
